@@ -10,10 +10,12 @@ function mostraPromocao () {
     var preco = Number(inPreco.value)
 
     /*CALCULO: 
-    Na compra de duas unidades de um mesmo medicamento,
-    O cliente recebe como desconto os centavos do valor total*/
-    var valorTotal = preco * 2
-    var desconto = Math.floor(valorTotal)
+    Na compra de duas unidades de um mesmo medicamento, o cliente recebe como desconto os centavos do valor total.
+    Exemplo que usei:
+    -> var valorTotal = preco * 2
+    -> var desconto = Math.floor(valorTotal)
+    Correção:*/
+    var desconto = Math.floor(preco * 2)
 
     // altera o conteúdo dos parágrafos de resposta
     outMedicamento.textContent = "Promoção de " + medicamento
