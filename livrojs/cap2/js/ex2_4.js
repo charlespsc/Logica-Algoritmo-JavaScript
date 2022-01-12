@@ -16,4 +16,4 @@ function calcularPreco() {
 // cria referência ao elemento btCalcular 
 var btCalcular = document.getElementById("btCalcular")
 // registra um evento associado ao botão, para carregar a função
-btCalcular.addEventListener("click", + calcularPreco)
+btCalcular.addEventListener("click", calcularPreco)
