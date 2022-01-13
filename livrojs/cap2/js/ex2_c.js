@@ -20,7 +20,7 @@ function verPromocao() {
     outPromocao.textContent = produto + " - Promoção: Leve 3 por R$: " + total.toFixed(2)
     outPrecoTerceiro.textContent = "Leve 2 por apenas R$: " + terceiro.toFixed(2)
 }
-// cria uma referência ao elemento btVerPromocao (botão)
+// cria uma referência ao elemento btPromocao (botão)
 var btPromocao = document.getElementById("btPromocao")
 // registra um evento associado ao botão, para carregar uma função
 btPromocao.addEventListener("click", verPromocao)
