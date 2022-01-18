@@ -39,3 +39,27 @@ function calcularPeso() {
 // Cria referência ao elemento btCalcular e registra evento associado a calculaPeso
 var btResultado = document.getElementById("btCalcular")
 btCalcular.addEventListener("click", calcularPeso)
+
+/* Primeiro Exemplo: Para limpar os campos 
+function limparCampos() {
+    // Limpa o conteúdo de cada elemento
+    document.getElementById("inNome").value = ""
+    document.getElementById("rbMasculino").checked = false
+    document.getElementById("rbFeminino").checked = false
+    document.getElementById("inAltura").value = ""
+    document.getElementById("outReposta").textContent = ""
+    // posiciona (joga o foco) no elemento inNome
+    document.getElementById("inNome").focus()
+}
+var btLimpar = document.getElementById("btLimpar")
+btLimpar.addEventListener("click", limparCampos)
+*/
+// Segundo Exemplo: Para dar um reload na tela e limpa também o resultado
+function limparCampos() {
+    // recarrega a página
+    location.reload()
+    // posiciona (joga o foco) no elemento inNome
+    document.getElementById("inNome").focus()
+}
+var btLimpar = document.getElementById("btLimpar")
+btLimpar.addEventListener("click", limparCampos)
