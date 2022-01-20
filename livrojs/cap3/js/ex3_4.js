@@ -13,7 +13,7 @@ function calcularFuso() {
         return
     }
 
-    var horaFranca = horaBrasil + 5                    // calcula o horário na França
+    var horaFranca = horaBrasil + 4                    // calcula o horário na França
 
     // se passar das 24 horas na França...
     if (horaFranca > 24) {
