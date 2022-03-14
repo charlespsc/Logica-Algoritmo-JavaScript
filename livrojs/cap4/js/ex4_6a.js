@@ -12,6 +12,23 @@ function verificarPrimo() {
         return
     }
 
+    var numDivisores = 0    // declara e inicializa contador
+
+    // percorre todos os possíveis divisores do número
+    for (var i = 1; i <= num; i++) {
+        // verifica se i (1, 2, 3 ...) é divisor do num
+        if (num % i == 0) {
+            numDivisores++  // se é, incrementa contador
+        }
+    }
+
+    // se possível apenas 2 divisores, é primo
+    if (numDivisores == 2) {
+        outResposta.textContent = num + " É primo"
+    } else {
+        outResposta.textContent = num + " Não é primo"
+    }
+
     // declara e inicializa a variável tipo flag
     var temDivisor = 0
 
