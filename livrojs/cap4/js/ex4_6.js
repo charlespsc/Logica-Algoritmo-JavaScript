@@ -28,6 +28,24 @@ function verificarPrimo() {
     } else {
         outResposta.textContent = num + " Não é primo"
     }
+
+    // declara e inicializa a variável tipo flag
+    var temDivisor = 0
+
+    // percorre os possíveis divisores do num
+    for (var i = 2; i <= num / 2; i++) {
+        if (num % i == 0){
+            temDivisor = 1 // muda o flag
+            break // sai da repetição
+        }
+    }
+
+    // se num > 1 e não possui divisor
+    if (num > 1 && !temDivisor){
+        outResposta.textContent = num + " É primo"
+    } else {
+        outResposta.textContent = num + " Não é primo"
+    }
 }
 // referencia elemento e após associa function ao evento click
 var btVerificarPrimo = document.getElementById("btVerificarPrimo")
