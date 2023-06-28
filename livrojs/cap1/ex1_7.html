@@ -1,8 +1,10 @@
 <meta charset="utf-8">
 <script>
-    // lê um dado de entrada
-    var num = Number(prompt("Número: "))
-    // calcula o dobro
-    var dobro = num + num
-    alert("Dobro é: " + dobro)
+    //Exemplo: 1.7 - Cálculo do valor do jantar(ex1_7.html)
+    const jantar = Number(prompt("Valor do Jantar R$: "))       //lê o valor do jantar
+    const garcom = jantar * 0.10                                //calcula variável de saída
+    const total = jantar + garcom
+
+    alert(`Taxa Garçom R$: ${garcom.toFixed(2)}\nTotal R$: ${total.toFixed(2)}`)     //O método toFixed(2) é add para conter 2 casas decimais
+
 </script>
