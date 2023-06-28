@@ -1,12 +1,10 @@
-// declara a função mostrarOla
-function mostrarOla() {
-    // obtém o conteúdo do campo (com id=) nome
-    var nome = document.getElementById("nome").value;
-    // exibe no parágrafo (com id=) "resposta": "Olá " e o nome informado
-    document.getElementById("resposta").textContent = "Olá " + nome;
-}
-// cria uma referência ao botão (com id=) mostrar 
-var mostrar = document.getElementById("mostrar");
-// registra para o botão mostrar um "ouvinte" para o evento click,
-// que ao ser clicado irá chamar a função mostrarOla
-mostrar.addEventListener("click", mostrarOla);
+//cria referência ao form e ao elemento h3 (onde será exibida a resposta)
+const frm = document.querySelector("form")
+const resp = document.querySelector("h3")
+
+//cria um "ouvinte" de evento, acionado quando o botão submit for clicado
+frm.addEventListener("submit", (e) => {
+    const nome = frm.inNome.value           //obtém o nome digitado no form
+    resp.innerText = `Olá ${nome}`          //exibe a resposta do programa
+    e.preventDefault()                      //evita envio do form
+})
