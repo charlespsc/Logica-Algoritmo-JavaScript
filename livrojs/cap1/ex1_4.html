@@ -1,13 +1,16 @@
 <script>
-    /*
-    Operações envolvendo strings e números
-    */
-    var a = "20"
-    var b = a * 2       // b = 40 
-    var c = a / 2       // c = 10 
-    var d = a - 2       // b = 18 
-    var e = a + 2       // b = 202
-    var f = Number(a)   // Transformando a em Number
-    var g = f + 2       // g = 22
-    alert("g: " + g)    // exibe o valor de uma variável  
+    const fruta = "Banana"
+    const preco = 3.50
+    const levar = true
+    let novoValor
+
+    console.log(typeof fruta)       //string
+    console.log(typeof preco)       //number
+    console.log(typeof levar)       //boolean
+    console.log(typeof novoValor)   //undefined
+
+    // Também é possível verificar se o número é inteiro ou possui decimais:
+    console.log(Number.isInteger(12))       //True
+    console.log(Number.isInteger(3.50))     //False
+
 </script>
