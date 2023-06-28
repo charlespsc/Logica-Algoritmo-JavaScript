@@ -2,12 +2,12 @@
 <script>
     /* 1C - Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja.
             Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x. */
-    // lê o dado de entrada (preço do produto)
-    var precoProduto = Number(prompt("Informe o preço do produto: "))
+
+    const precoProduto = Number(prompt("Informe o preço do produto: "))
     // calcula à vista e a prazo 3x 
-    var desconto = precoProduto * 0.10
-    var aVista = precoProduto - desconto
-    var aPrazo = precoProduto / 3 
+    const desconto = precoProduto * 0.10
+    const aVista = precoProduto - desconto
+    const aPrazo = precoProduto / 3 
     // exibe o total
-    alert("Preço R$: " + precoProduto.toFixed(2) + "\nÀ Vista R$: " + aVista.toFixed(2) + "\nOu 3x de R$: " + aPrazo.toFixed(2))
+    alert(`Preço R$: ${precoProduto.toFixed(2)}\nÀ Vista R$: ${aVista.toFixed(2)}\nOu 3x de R$: ${aPrazo.toFixed(2)}`)
 </script>
